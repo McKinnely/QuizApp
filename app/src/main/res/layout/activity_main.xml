@@ -1,0 +1,177 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.mckinnely.quizapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"
+        android:text="Score:" />
+
+    <TextView
+        android:id="@+id/question_one_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"
+        android:text="If Hillary has 25 apples and buys 20 more, how many apples does Hillary now have?" />
+
+    <EditText
+        android:id="@+id/q1_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="Answer:" />
+
+    <TextView
+        android:id="@+id/question_two_heading"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
+        android:text="If Micheal, Chris, Eric and Johny are all in the same room and only the first three mentioned boys had apples. Check the name of the boys that had apples. " />
+
+    <CheckBox
+        android:id="@+id/question_two_first_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Micheal"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/question_two_second_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Johny"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/question_two_third_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Eric"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/question_two_fourth_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Chris"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:id="@+id/question_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which number is the smallest? 25, 50 100, 1000." />
+
+
+ <RadioGroup
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+     <RadioButton
+         android:id="@+id/radio_question_one"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="24dp"
+         android:text="25"
+         android:textSize="16sp" />
+     <RadioButton
+         android:id="@+id/radio_question_two"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="24dp"
+         android:text="20"
+         android:textSize="16sp" />
+     <RadioButton
+         android:id="@+id/radio_question_three"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="24dp"
+         android:text="100"
+         android:textSize="16sp" />
+     <RadioButton
+         android:id="@+id/radio_question_four"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="24dp"
+         android:text="1000"
+         android:textSize="16sp" />
+
+ </RadioGroup>
+
+    <TextView
+        android:id="@+id/question_four"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick the largest number of the group?" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_question_one1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="25"
+            android:textSize="16sp" />
+        <RadioButton
+            android:id="@+id/radio_question_two2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="20"
+            android:textSize="16sp" />
+        <RadioButton
+            android:id="@+id/radio_question_three3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="100"
+            android:textSize="16sp" />
+        <RadioButton
+            android:id="@+id/radio_question_four4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="1000"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:paddingTop="16dp"
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getScore"
+        android:text="Submit" />
+</LinearLayout>
+</ScrollView>
