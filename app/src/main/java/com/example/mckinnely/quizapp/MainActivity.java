@@ -7,6 +7,12 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+
+
+/**
+ * Remember to change xml to weight on screen real-estate to make the data take up an equal amount of the screen.
+ */
+
 public class MainActivity extends AppCompatActivity
 {
 
